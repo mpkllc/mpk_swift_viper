@@ -1,0 +1,51 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+class {{ module_info.name }}ViewController: UIViewController, {{module_info.name}}ViewInput {
+
+    // MARK: Variables
+    var {{ module_info.name | downcase }}ModuleInput: {{ module_info.name }}ModuleInput?
+    override var moduleInput: ViperModuleInput? {
+        get {
+            return {{ module_info.name | downcase }}ModuleInput
+        }
+        
+        set {
+            {{ module_info.name | downcase }}ModuleInput = newValue as! {{ module_info.name }}ModuleInput?
+        }
+    }
+    var output: {{ module_info.name }}ViewOutput!
+
+    // MARK: Life cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        output.viewDidLoad()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        output.viewWillAppear()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        output.viewWillDisappear()
+    }
+
+    // MARK: {{module_info.name}}ViewInput
+    func setupInitialState() {
+    }
+
+    func setupStateForViewWillAppear() {
+    }
+
+    func setupStateForViewWillDisappear() {
+    }
+}
