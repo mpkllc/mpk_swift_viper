@@ -10,14 +10,14 @@ import UIKit
 
 class {{ module_info.name }}ModuleConfigurator {
 
-    func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
+    func configureModuleForViewInput<UIViewController>(_ viewInput: UIViewController) {
 
         if let viewController = viewInput as? {{ module_info.name }}ViewController {
-            configure(viewController)
+            configureViewController(viewController)
         }
     }
 
-    private func configure(viewController: {{ module_info.name }}ViewController) {
+    private func configureViewController(_ viewController: {{ module_info.name }}ViewController) {
 
         let router = {{ module_info.name }}Router()
         router.transitionHandler = viewController

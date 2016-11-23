@@ -1,8 +1,8 @@
 # Template information section
 name: "mpk_swift_viper"
 summary: "Swift VIPER module template with UIViewController playing as a View with adding view to router as transition handler."
-author: "Valeriy Popov, Vasiliy Yatsevich, Mike Rudoy"
-version: "0.1.0"
+author: "Valeriy Popov, Vasiliy Yatsevich, Mike Rudoy, Valentin Popkov"
+version: "0.1.1"
 license: "MIT"
 
 # The declarations for code files
