@@ -1,8 +1,8 @@
 # Template information section
-name: "mpk_swift_viper"
-summary: "Swift VIPER module template with UIViewController playing as a View with adding view to router as transition handler."
+name: "swifty_viper_mcflurry"
+summary: "Swift VIPER module template with UIViewController playing as a View and with transitioning like in ViperMcFlurry. Needs to import ViperTransitioning in project"
 author: "Valeriy Popov, Vasiliy Yatsevich, Mike Rudoy, Valentin Popkov"
-version: "0.1.1"
+version: "0.1.0"
 license: "MIT"
 
 # The declarations for code files
@@ -29,6 +29,9 @@ code_files:
 # Configurator
 - {name: Configurator/Configurator.swift, path: Code/Configurator/configurator.swift.liquid}
 - {name: Configurator/Initializer.swift, path: Code/Configurator/initializer.swift.liquid}
+
+# Constants
+- {name: Constants.swift, path: Code/constants.swift.liquid}
 
 # The declarations for test files
 test_files:
